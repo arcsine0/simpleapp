@@ -11,13 +11,15 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="359dp"
         android:layout_height="149dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/rounded_corner"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/rt"
             android:layout_width="94dp"
             android:layout_height="63dp"
             android:autoSizeMaxTextSize="48sp"
@@ -26,10 +28,77 @@
             android:autoSizeTextType="uniform"
             android:fontFamily="@font/fjalla_one"
             android:gravity="center"
-            android:text="10"
+            android:text="100"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
-            tools:layout_editor_absoluteX="28dp"
-            tools:layout_editor_absoluteY="43dp" />
+            tools:layout_editor_absoluteX="226dp"
+            tools:layout_editor_absoluteY="26dp" />
+
+        <ImageView
+            android:id="@+id/rt_icon"
+            android:layout_width="36dp"
+            android:layout_height="41dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="@id/rt"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintStart_toStartOf="@id/rt"
+            app:layout_constraintTop_toBottomOf="@id/rt"
+            app:srcCompat="@drawable/retweet"
+            app:tint="#686868" />
+
+        <TextView
+            android:id="@+id/comments"
+            android:layout_width="94dp"
+            android:layout_height="63dp"
+            android:autoSizeMaxTextSize="48sp"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/fjalla_one"
+            android:gravity="center"
+            android:text="100"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            tools:layout_editor_absoluteX="132dp"
+            tools:layout_editor_absoluteY="26dp" />
+
+        <ImageView
+            android:id="@+id/comments_icon"
+            android:layout_width="36dp"
+            android:layout_height="39dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="@id/comments"
+            app:layout_constraintStart_toStartOf="@id/comments"
+            app:layout_constraintTop_toBottomOf="@id/comments"
+            app:srcCompat="@drawable/comment3"
+            app:tint="#686868" />
+
+        <TextView
+            android:id="@+id/hearts"
+            android:layout_width="94dp"
+            android:layout_height="63dp"
+            android:autoSizeMaxTextSize="48sp"
+            android:autoSizeMinTextSize="12sp"
+            android:autoSizeStepGranularity="2sp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/fjalla_one"
+            android:gravity="center"
+            android:text="100"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            tools:layout_editor_absoluteX="38dp"
+            tools:layout_editor_absoluteY="26dp" />
+
+        <ImageView
+            android:id="@+id/heart_icon"
+            android:layout_width="36dp"
+            android:layout_height="41dp"
+            android:scaleType="centerCrop"
+            app:tint="#686868"
+            app:layout_constraintEnd_toEndOf="@id/hearts"
+            app:layout_constraintStart_toStartOf="@id/hearts"
+            app:layout_constraintTop_toBottomOf="@id/hearts"
+            app:srcCompat="@drawable/heart" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
