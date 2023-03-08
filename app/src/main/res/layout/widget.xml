@@ -76,7 +76,7 @@
                     android:id="@+id/heart_icon"
                     android:layout_width="36dp"
                     android:layout_height="41dp"
-                    android:contentDescription="TODO"
+                    android:contentDescription="heart"
                     android:scaleType="centerCrop"
                     app:srcCompat="@drawable/heart"
                     app:tint="#686868" />
