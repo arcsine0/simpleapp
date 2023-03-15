@@ -59,6 +59,10 @@ class FirstFragment : Fragment() {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
 
+        binding.buttonAuth.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_loginFragment)
+        }
+
         binding.alert.setOnClickListener {
             showAlertDialog(binding.root)
         }
