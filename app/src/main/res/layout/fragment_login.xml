@@ -46,7 +46,8 @@
             android:ems="10"
             android:hint="JohnDoe"
             android:inputType="textPersonName"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/textView2"
@@ -64,7 +65,8 @@
             android:ems="10"
             android:hint="example@google.com"
             android:inputType="textPersonName"
-            android:textSize="16sp" />
+            android:textSize="16sp"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/textView3"

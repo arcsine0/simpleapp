@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.util.Log
 import android.widget.Button
+import android.widget.EditText
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.dialogbox.databinding.FragmentLoginBinding
@@ -47,16 +48,16 @@ class LoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        var username = R.id.username.toString()
-        var email = R.id.email.toString()
-        var pass = R.id.pass.toString()
+        val usernameEditText = view.findViewById<EditText>(R.id.username)
+        val emailEditText = view.findViewById<EditText>(R.id.email)
+        val passEditText = view.findViewById<EditText>(R.id.pass)
 
         val signUp = view.findViewById<Button>(R.id.signUp)
 
         binding.signUp.setOnClickListener {
-            dataModel.username.value = username
-            dataModel.email.value = email
-            dataModel.pass.value = pass
+            dataModel.username.value = usernameEditText.text.toString()
+            dataModel.email.value = emailEditText.text.toString()
+            dataModel.pass.value = passEditText.text.toString()
 
             findNavController().navigate(R.id.action_loginFragment_to_dashboardFragment)
         }

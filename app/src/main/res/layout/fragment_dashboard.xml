@@ -10,7 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="243dp"
+        android:layout_marginEnd="16dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -28,16 +28,18 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="10dp"
                 android:fontFamily="@font/bungee"
-                android:text="Welcome!" />
+                android:text="Welcome!"
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/username"
-                android:layout_width="wrap_content"
+                android:layout_width="103dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="@font/bungee"
                 android:text="username"
-                android:textColor="#673AB7" />
+                android:textColor="#673AB7"
+                android:textSize="20sp" />
         </LinearLayout>
 
         <TextView
